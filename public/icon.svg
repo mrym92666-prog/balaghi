@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#004349"/>
+      <stop offset="100%" stop-color="#0D5C63"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF8162"/>
+      <stop offset="100%" stop-color="#E76F51"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#001F29" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Rounded Base Background -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle Civic Geometric Moroccan Arch & Beacon Pattern -->
+  <path d="M120 400 C120 280, 200 160, 256 120 C312 160, 392 280, 392 400" fill="none" stroke="#2A9D8F" stroke-width="12" stroke-linecap="round" opacity="0.35"/>
+  <circle cx="256" cy="120" r="14" fill="#8CF5E4" opacity="0.6"/>
+
+  <!-- Megaphone / Beacon / Pin Symbolism for Balaghi (بلاغي) -->
+  <g filter="url(#shadow)">
+    <!-- Pin & Pulse Shield -->
+    <path d="M256 160 C205 160 164 201 164 252 C164 316 236 394 251 409 C254 413 258 413 261 409 C276 394 348 316 348 252 C348 201 307 160 256 160 Z" fill="#FFFFFF"/>
+    
+    <!-- Central Soundwave / Civic Wave Icon -->
+    <circle cx="256" cy="246" r="42" fill="url(#accentGrad)"/>
+    
+    <!-- Inner Checkmark & Megaphone rays -->
+    <path d="M242 246 L252 256 L272 234" fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Pulse ripples -->
+    <path d="M312 216 C326 230 334 249 334 270" fill="none" stroke="#0D5C63" stroke-width="5" stroke-linecap="round"/>
+    <path d="M326 200 C345 220 356 247 356 276" fill="none" stroke="#2A9D8F" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Darija Badge / Emblem Dot -->
+  <circle cx="360" cy="168" r="18" fill="#FF8162"/>
+  <circle cx="360" cy="168" r="8" fill="#FFFFFF"/>
+</svg>
